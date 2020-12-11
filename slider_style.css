@@ -1,0 +1,58 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/watercolor-background_87374-69.jpg?size=626&ext=jpg");
+    background-size: cover;
+    display: flex;
+    color: #361C16;
+}
+.aside {
+    border-right: 1px solid blueviolet;
+    display: inline-block;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    width: 4rem;
+    height: 20rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+.aside p {
+    margin: 2px 0 0 0;
+    writing-mode: vertical-rl;
+}
+.header {
+    padding:5px;
+    border-bottom: 1px solid blueviolet;
+    display:flex;
+justify-content: space-between;}
+h2 { font-size: 1.54rem;
+font-weight: bold;}
+.logo {
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;}
+.main {
+    display: flex;
+}
+.banner{
+    padding-top: 5rem;
+    display:flex;
+    width: 70%;
+    justify-content: right;
+}
+.banner p {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+}
+.col:not(:first-child) {
+    display: inline-block;
+    border-left: 1px solid blueviolet;
+}
+.col:not(:first-child)>p {
+    margin-top: 1rem;
+
+}
+h3 { text-transform: uppercase;
+    text-decoration: underline;}

@@ -1,0 +1,260 @@
+#wrapper {
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.left, .center, .footer, .right {
+    border: 1px solid purple;
+}
+
+#header {
+    height: 40px;
+    background-color: burlywood;
+    margin: 0;
+    padding-left: 100px;
+}
+
+ul {
+    padding-left: 150px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+}
+
+li {display: block;
+    margin-bottom: auto;
+    list-style-type: none;
+    padding: 9px;
+
+}
+
+a { display: block;
+ height: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+li:hover {
+    cursor: pointer;
+    background-color: #ff994f;
+}
+li:hover a {
+        opacity: 50%;
+    text-decoration: underline;
+}
+
+.cartoon {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+h1, p {
+    text-align: justify;
+    padding: 4px 5px;
+}
+
+
+h1 {
+    margin: 5px;
+    margin-top: 0;
+}
+
+h2 {
+    padding-left: 2%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 15px;
+    margin: 10px;
+    font-family: Arial;
+}
+
+.middle {
+    margin: 0px auto;
+    width: 1100px;
+    background-color: #f0fff4;
+    display: flex;
+}
+.center{
+    width: 60%;
+}
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 20%;
+}
+
+.sidebar {
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+
+
+td, tr {
+    background-color: white;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+@media screen and (min-width: 376px) {
+    .left {
+        min-width: 30%;
+    }
+}
+
+
+.footer {
+    background-color: burlywood;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+
+    }
+.ssilka {
+    text-align: center;
+
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #9779ec;
+}
+.car {
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+    padding: 1px;
+}
+
+/* #menu {
+  width: 30%;
+  border: 1px solid blue;
+  background: #2696E8;
+  margin: 2px auto;
+}
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px; 
+  margin: 0px;
+}
+#menu li {
+  list-style-type: none;
+  border: 1px solid blue;
+}
+#menu a {
+  padding: 10px;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+#menu a:hover {
+  background-color: white;
+  color: #2696E8;
+}
+
+
+/*#menu9 a:hover{
+  color:#506361;
+  text-decoration: underline;
+}
+#menu9 a.holiday:link, #menu9 a.holiday:visited{color:#8CA2C1;}
+#menu9 a{font-family: Arial; font-size: 12px; line-height: 1; }
+#menu9{
+  width: 150px;
+  margin: 20px 0px;
+}
+#menu9 table{width: 100%; height: 100%;}
+#menu9 td{text-align: center;}
+#menu9 th{border-bottom: 1px solid #000000;}
+#menu9 a.active{color: red; font-weight: bold;}*/
+
+
+/*body{
+  
+  width: 980px;
+  height: 980px;
+  font-family: Times New Roman;
+  border-width: 3px; 
+  border-style: solid; 
+  border-color: blue;
+background: url('https://fb.ru/misc/i/gallery/20294/416344.jpg') repeat-y right top;
+
+}
+.new {
+
+  border-width: 3px; /* толщина 3px 
+  border-style: solid; /* в виде точек
+  border-color: blue;  
+  width: 300px;
+  height: 200px; 
+  margin: 50px; 
+  border-radius: 10px 40px;
+  border-right-color: black;
+  border-left-color: black;
+background-image: url('https://html5book.ru/wp-content/uploads/2015/05/svetlye_fony.jpg');
+
+}
+h1, h2{
+  color: blue;
+  width: 400px;
+  text-align: center;
+}
+table{
+ width: 400px;
+height: 200px;}
+td, tr, th{
+  text-align: center;
+}
+div p {
+  color: red;
+}
+div h2 {
+  color: green;
+}
+a:link.www, a:visited.www{ 
+  text-decoration: underline;
+  color: blue;
+} 
+a:hover.www{
+  text-decoration: none;
+}
+.q a:link.w, .q a:visited.w {
+  color:orange;
+  text-decoration: underline;
+}
+.q a:hover.w, .q a:active.w {
+  text-decoration: none;
+  color: white;
+}
+
+p{
+  line-height: 30px;
+  text-indent: 30px;
+  text-align: justify;
+}
+.p1{
+  text-decoration: underline;
+}
+.p2 {
+  text-decoration: overline;
+}
+.p3{
+  text-decoration: line-through;
+} */
+
