@@ -11,10 +11,7 @@ body {
     align-items: center;
     font-size: 1.5rem;
     justify-content: space-between;
-    width: 4rem;
-    height: 20rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
+
 }
 
 .aside p {
@@ -73,7 +70,14 @@ h3 {
     text-transform: uppercase;
     text-decoration: underline;
 }
+.col.aside {
+    transform: rotate(-180deg);
+    width: 4rem;
+    height: 20rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
 
+}
 .banner.col {
     transform: rotate(-90deg);
     display: block;
