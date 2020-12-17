@@ -5,21 +5,28 @@ body {
     margin: 0;
     padding: 50px;
 }
+
 table {
     overflow: hidden;
-border-collapse: collapse;
+    border-collapse: collapse;
 }
+
 table, td, th {
     border: 1px solid black;
     padding: 5px;
 }
+
 td {
-    width: 50px; height: 50px;
+    width: 50px;
+    height: 50px;
     position: relative;
 }
+
 td::before {
     content: '';
-    width: 50px; height: 50px; display: block;
+    width: 50px;
+    height: 50px;
+    display: block;
     background-color: #9779ec;
     border-radius: 100%;
     margin: auto;
@@ -28,9 +35,11 @@ td::before {
 td:hover::before {
     background-color: black;
 }
+
 tr:hover {
     background-color: #f3faff;
 }
+
 td:hover::after {
     content: '';
     position: absolute;
@@ -41,11 +50,11 @@ td:hover::after {
     height: 900px;
     background: #f3faff;
 }
+
 button {
     margin: 10px;
     padding: 10px 7px;
-    background:
-repeating-linear-gradient(0deg, #9779ec, #f0fff4 40%, #9779ec);
+    background: repeating-linear-gradient(0deg, #9779ec, #f0fff4 40%, #9779ec);
     width: 108px;
     box-shadow: 0 0 6px 1px #646469b5;
     border-radius: 50px;
@@ -53,52 +62,383 @@ repeating-linear-gradient(0deg, #9779ec, #f0fff4 40%, #9779ec);
     border-width: 4px;
     border-color: #f0fff4;
 }
+
 p {
     margin: 0;
     font-weight: bold;
 }
-.wrapper {
-    position: relative;
-    width: 600px;
-    height: 380px;
-    background-image: url("http://htmlbook.ru/files/river.jpg");
-    background-position: center;
-    background-size: cover;
+
+.black {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-style: double;
+    border-color: white;
+    border-width: 3px;
 }
-.content {
-    width: inherit;
+
+.white {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: -40px;
+    bottom: 30px;
+    background-color: white;
+    border: 1px solid #999999;
+}
+
+
+.progress {
+    margin-top: 5px;
+    position: relative;
+    height: 20px;
+    width: 40%;
+    background: linear-gradient(0deg, #9779ec, #f0fff4 40%);
+    border: 2px solid #9779ec;
+    border-radius: 10px;
+}
+
+.progress.content {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 2px 0 5px 1px #9779ec;;
+    margin: 0;
+    border: none;
     position: absolute;
-    bottom: 16px;
-    left: 200px;
+    top: 0;
+    left: 0;
+    width: 40%;
+    background: repeating-linear-gradient(0deg, #333333, #999999 40%, #333333);
 }
+
+.root p {
+    padding: 3px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+p span {
+    font-size: 10px;
+    text-decoration: overline;
+    font-style: italic;
+}
+
+.circle {
+    position: relative;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    background-color: #999999;
+    border-radius: 45px;
+}
+
+.part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #333333;
+    border-radius: 45px;
+    clip: rect(42px 90px 90px 41px);
+    transform: rotate(-45deg);
+}
+
+.form {
+    padding-left: 3px;
+    width: 40%;
+    background-color: blueviolet;
+}
+
+.form p {
+    margin: 5px;
+    display: block;
+    min-height: 10%;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#password {
+    display: flex;
+    justify-content: left;
+}
+
+#repeat {
+    margin-left: 15px;
+}
+
 input {
-    visibility: hidden;
-}
-input:after {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
-input[type='radio']:checked:after {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #ffa500;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
+    background-color: white;
 }
 
+legend {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
 
+.list {
+    width: 50%
+}
+
+.list ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+ol {
+    flex-direction: row;
+}
+
+.list li {
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    background: linear-gradient(0deg, #333333, #999999 40%);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0px #999999;
+    display: inline-block;
+    height: 20px;
+    width: 27px;
+}
+
+.item-list {
+    padding: 0;
+    height: 20px;
+    background-color: #999999;
+    border-bottom: 3px solid #333333;
+    display: flex;
+
+    /*flex-wrap: wrap;*/
+}
+
+.pager {
+    list-style-type: none;
+    margin: 0;
+}
+
+.pager li {
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0;
+    height: 20px;
+    width: 35px;
+}
+
+a {
+    display: inline-block;
+
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.pager-current.first {
+    background-color: darkgray;
+    padding-top: 3px;
+    display: inline-block;
+    height: 16px;
+    border-bottom: 3px solid #333333;
+}
+
+.whether-main {
+    margin-top: 3px;
+    display: flex;
+    max-width: 60%;
+}
+
+.whether {
+    width: 33.3%;
+    align-items: center;
+    margin-right: 3px;
+}
+
+img {
+    margin: 0 30%;
+}
+
+.data {
+    line-height: 20px;
+    background-color: #9779ec;
+    text-align: center;
+    color: white;
+}
+
+.whether p {
+    text-align: center;
+}
+
+.whether:hover {
+    box-shadow: 0 0 7px 0px #999999;
+}
+
+.lenta {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #999999;
+    width: 21%;
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+.lenta::after, .lenta::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    transform: skew(-30deg);
+}
+
+.lenta::before {
+    left: -15px;
+    top: 0;
+}
+
+.lenta::after {
+    right: -15px;
+    bottom: 0;
+}
+
+.blocks {
+    width: 40%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.block {
+    margin-top: 5px;
+    margin-right: 3px;
+    transform: skewX(-30deg);
+    background-color: #333333;
+    width: 10px;
+    height: 10px;
+}
+
+.lenta p {
+    margin-left: 14px;
+    margin-top: 2px;
+    color: #333333;
+}
+
+#main-ekg {
+    padding-top: 1px;
+    height: 180px;
+    width: 30%;
+    background-color: black;
+    position: relative;
+
+}
+
+.ekg {
+    border-radius: 0 0 20px 20px;
+    padding-top: 28px;
+    padding-left: 3px;
+    height: 70%;
+    color: #333333;
+    margin: 15px 28px 4px 29px;
+    background: linear-gradient(0deg, #999999, #f0fff4 70%);
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 29px;
+    width: 15px;
+    background-color: black;
+    transform: skew(-20deg);
+    top: 1px;
+    left: 77px;
+}
+
+h1 {
+    margin: 0;
+
+    width: 20%;
+    color: #f0fff4;
+    position: absolute;
+    top: 14px;
+    left: 28px;
+    padding-left: 5px;
+    background-color: black;
+}
+
+.main-opacity {
+    padding-top: 20px;
+    margin-bottom: 5px;
+    width: 50%;
+    height: 150px;
+    background-image: url("https://www.w3schools.com/w3css/img_lights.jpg");
+
+}
+
+.opacity {
+    padding-top: 1px;
+    padding-bottom: 19px;
+    width: 50%;
+    height: 50%;
+    margin: 6px auto;
+    background-color: #999999;
+    opacity: 0.5;
+    border-radius: 6px;
+}
+
+.block-content {
+    margin: 5px auto;
+    width: 80%;
+    height: 80%;
+    background-color: #f0fff4;
+    border-radius: 10px;
+}
+
+nav {
+
+    background-color: #7fc1ff;
+    border-radius: 11px 10px 0 0;
+    position: relative;
+    z-index: 0;
+}
+
+nav::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #7fc1ff;
+    transform: rotate(45deg);
+    top: 8px;
+    left: 3px;
+    z-index: -1;
+}
+.main-green {
+    padding-top: 10px;
+    background-color: aquamarine;
+    width:50%;
+    height: 50px;
+    position:relative;
+    border-radius: 6px;
+    box-shadow: 0 0 1px 1px #c7e4ff;
+}
+.main-green::before {
+    border-radius: 6px;
+    content: "заголовок";
+    position: absolute;
+    padding: 4px;
+    font-weight: bold;
+    height: 16px;
+    width: 64px;
+    background-color: aquamarine;
+    top: -16px;
+    left: 0;
+    box-shadow: 0 0 1px 1px #c7e4ff;
+}
