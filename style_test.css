@@ -420,15 +420,17 @@ nav::before {
     left: 3px;
     z-index: -1;
 }
+
 .main-green {
     padding-top: 10px;
     background-color: aquamarine;
-    width:50%;
+    width: 50%;
     height: 50px;
-    position:relative;
+    position: relative;
     border-radius: 6px;
     box-shadow: 0 0 1px 1px #c7e4ff;
 }
+
 .main-green::before {
     border-radius: 6px;
     content: "заголовок";
@@ -441,4 +443,52 @@ nav::before {
     top: -16px;
     left: 0;
     box-shadow: 0 0 1px 1px #c7e4ff;
+}
+
+.kek-main {
+    padding-top: 7px;
+    position: relative;
+    border: 1px solid black;
+    background: linear-gradient(to right, #e3c7a4 50%, white 50%);
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.kek-main::after {
+    content: "50%";
+    position: absolute;
+    top: 5px;
+    left: 48%;
+    font-weight: bold;
+}
+
+.apple {
+    position: relative;
+    height: 188px;
+    width: 222px;
+}
+
+.apple::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://htmlbook.ru/files/ranetka.jpg");
+    background-size: cover;
+}
+
+.apple::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 13px 2px -2px gray;
 }
